@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewpoint" content="width-device-width, initial-scale = 1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/9eb5b318ba.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <!-- Different sections -->
+        <nav>
+          <ul id="sidemenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#Portfolio">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>
+            Hi, I'm Muneeb A Third year<br />
+            Computer Science Major <br /><span class="auto-type"></span><br />
+          </h1>
+        </div>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <!-- <img src="personal-portfolio-img/images/My_pciture.jpeg"> -->
+            <img
+              src="C:\Software_Development\Personal_Portfolio\personal-portfolio-img\images\Profile.jpg"
+            />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <br />
+            <p
+              style="
+                font-size: 21px;
+                color: rgb(255, 255, 255);
+                font-family: 'Courier New', Courier, monospace;
+              "
+            >
+              I'm a passionate Computer Science enthusiast with a strong
+              interest in front-end technologies and UX design. I love creating
+              visually appealing and user-friendly interfaces that provide a
+              seamless experience. With a solid foundation in programming and
+              design, I strive to bridge the gap between technical functionality
+              and aesthetic appeal. Currently, I’m exploring new tools and
+              frameworks to enhance my skills in web development, while
+              constantly refining my design process to ensure usability and
+              accessibility. I believe that great design can transform how users
+              interact with technology, and I’m committed to learning and
+              evolving in this ever-growing field.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!----skills------------------->
+    <section id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="services-list">
+          <div class="skill-item">
+            <label for="html-skill">HTML:</label>
+            <meter id="html-skill" value="0.9" min="0" max="1" title="90%">
+              90%
+            </meter>
+            <span class="percentage">90%</span>
+          </div>
+
+          <div class="skill-item">
+            <label for="css-skill">CSS:</label>
+            <meter id="css-skill" value="0.85" min="0" max="1" title="85%">
+              85%
+            </meter>
+            <span class="percentage">85%</span>
+          </div>
+
+          <div class="skill-item">
+            <label for="javascript-skill">JavaScript:</label>
+            <meter
+              id="javascript-skill"
+              value="0.75"
+              min="0"
+              max="1"
+              title="75%"
+            >
+              75%
+            </meter>
+            <span class="percentage">75%</span>
+          </div>
+
+          <div class="skill-item">
+            <label for="python-skill">Python:</label>
+            <meter id="python-skill" value="0.8" min="0" max="1" title="80%">
+              80%
+            </meter>
+            <span class="percentage">80%</span>
+          </div>
+
+          <div class="skill-item">
+            <label for="react-skill">React:</label>
+            <meter id="react-skill" value="0.7" min="0" max="1" title="70%">
+              70%
+            </meter>
+            <span class="percentage">70%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Portfolio-->
+
+    <section id="Projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+
+        <div class="Projects">
+          <div class="project-card">
+            <div class="image-container">
+              <img
+                src="https://passwordmonster.com/wp-content/uploads/2021/08/block-2-why-is-this-password-strencth-meter-safe.png"
+              />
+              <a
+                href="https://github.com/Muneeb231/Password_Checker"
+                target="_blank"
+                class="overlay"
+                >View</a
+              >
+            </div>
+            <!-- end of image container-->
+
+            <h3 class="heading">Password Security Checker</h3>
+            <p class="description">
+              A Python-based tool that evaluates password strength and checks
+              for breaches using an external API
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="image-container">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoSbpWz8SUrRq7EZL-tE73XEN-oSUPFgA3KQ&s"
+              />
+              <a
+                href="https://www.figma.com/proto/3YZzuizeSXkugqEE8z44a7/Expense_Tracker?node-id=164-2&t=GJGpAGoVCgTMxL5h-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=5%3A3&show-proto-sidebar=1"
+                target="_blank"
+                class="overlay"
+                >View</a
+              >
+            </div>
+            <!-- end of image container-->
+            <h3 class="heading">Expense Tracker App</h3>
+            <p class="description">
+              A high-fidelity expense tracking app prototype designed in Figma,
+              focusing on an intuitive and user-friendly experience.
+            </p>
+          </div>
+
+          <div class="project-card">
+            <div class="image-container">
+              <img
+                src="https://miro.medium.com/v2/resize:fit:1042/1*JzJ8yYO9F6dTyDfh6G_tLg.png"
+              />
+              <a
+                href="https://github.com/Muneeb231/HackerScraper"
+                target="_blank"
+                class="overlay"
+                >View</a
+              >
+            </div>
+            <!-- end of image container-->
+            <h3 class="heading">Hacker News Web Scraper</h3>
+            <p class="description">
+              A Python-based web scraper that extracts top stories from Hacker
+              News using web scraping techniques
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="contact" id="contact">
+      <form name = "submit-to-google-sheet">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="sub-title">Contact me</h1>
+            </div>
+          </div>
+
+          <label for="Full-name">
+            <input
+              name="Full-name"
+              id="Full-name"
+              type="text"
+              required
+              placeholder="Enter Your Full Name"
+            />
+          </label>
+
+          <label for="Email">
+            <input
+              name="Email"
+              id="Email"
+              type="email"
+              required
+              placeholder="Enter Your Email"
+            />
+          </label>
+          <label for="Message">
+            <textarea
+              name="Message"
+              id="Message"
+              placeholder="Enter Your Message"
+              type="text"
+              required
+            ></textarea>
+          </label>
+          <input type="submit" value="Submit" />
+        </form>
+        <span id ="message"></span>
+
+
+        
+            <div class = "connection">
+                <p class="connect">Or connect with me on:</p>
+                    
+                    <div class="social-icons">
+                        <a href = "https://github.com/Muneeb231" target = "_blank">
+                        <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href = "https://www.linkedin.com/in/syed-muneeb-saeed/" target = "_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a href = "mailto:munawwarmuneeb4@gmail.com" target="_blank">
+                        <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                    </div>
+                
+        </div>
+
+
+            
+    
+
+
+
+    <div class="copyright">
+      <p>Copywright @Muneeb Saeed. All Rights Reserved</p>
+    </div>
+
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: [
+          "Usually Coding",
+          "Learning new techonologies",
+          "Designing apps",
+        ],
+        typeSpeed: 300,
+        backspeed: 350,
+        loop: true,
+      });
+    </script>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzETlArBYzni3AgE-Z-A8PsWzWJ7yssmWnWqei7UgFYh2yS0AoD6YrXH9_D4NSeft4R/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const message = document.getElementById('message')
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        message.innerHTML = "Thanks for Contacting me! Will get back soon"
+        setTimeout(function(){
+          message.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,588 @@
+* {
+
+
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth !important
+
+}
+
+html body {
+
+
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+
+body {
+
+    background: black;
+    color: white;
+    background:linear-gradient(45deg, #43cea2, #185a9d); 
+}
+
+#header {
+
+    width: 100%;
+    height: 100vh;
+
+
+
+
+}
+
+.container {
+
+    padding: 1.5% 10%;
+    height: 100vh;
+    
+    
+
+
+}
+
+nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    margin-top: 17px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+nav ul li {
+
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    position: relative;
+
+
+}
+
+nav ul li ::after {
+
+    content: "";
+    width: 0;
+    height: 3px;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+
+
+}
+
+nav ul li a:hover::after {
+
+    width: 100%;
+    cursor: pointer;
+
+
+}
+
+.header-text {
+
+    margin-top: 20%;
+    font-size: 30px;
+
+}
+
+.header-text h1 {
+
+    font-size: 60px;
+    margin-top: 20px;
+
+}
+
+.header-text h1 span {
+
+    color: yellow;
+}
+
+
+.row {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+.about-col-1 {
+
+    flex-basis: 35%;
+
+
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.about-col-2 {
+
+    flex-basis: 60%;
+
+}
+
+.sub-title {
+
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+#about,
+#skills,
+#Portfolio,
+#contact {
+    padding: 0px 0;
+}
+
+
+
+/* The skill sectio */
+
+
+
+
+.skill-item {
+
+    font-size: 30px;
+    padding: 18px;
+    font-weight: bold;
+
+
+}
+
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.skill-item label {
+    flex: 1;
+    /* Adjust width of the label */
+}
+
+.skill-item meter {
+    flex: 2;
+    /* Adjust width of the progress bar */
+}
+
+.skill-item .percentage {
+    flex: 0.5;
+    /* Adjust width of the percentage display */
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+meter {
+    width: 100%;
+    height: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+meter::-webkit-meter-bar {
+    background: black;
+    /* Light grey background */
+    border-radius: 5px;
+}
+
+
+
+
+
+
+/* meter::-webkit-meter-optimum-value {
+    background: white;
+
+    Might change later
+
+} */
+
+#html-skill::-webkit-meter-optimum-value {
+    background: #e44d26;
+    /* Red for HTML */
+}
+
+#css-skill::-webkit-meter-optimum-value {
+    background: white;
+    /* Blue for CSS */
+}
+
+#javascript-skill::-webkit-meter-optimum-value {
+    background: #f7df1e;
+    /* Yellow for JavaScript */
+}
+
+#python-skill::-webkit-meter-optimum-value {
+    background: greenyellow
+        /* Python blue */
+}
+
+#react-skill::-webkit-meter-optimum-value {
+    background: #61dafb;
+    /* Light blue for React */
+}
+
+
+
+.Projects{
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+.heading{
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.description {
+    margin-top: 17px;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+
+    
+  }
+
+
+.project-card {
+    text-align: center;
+    max-width: 350px;
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+
+.Projects img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-top: 40px;
+
+
+  }
+
+
+
+/* Hover effect */
+.image-container:hover img {
+    transform: scale(1.05);
+    filter: brightness(70%);
+}
+
+/* Overlay GitHub link */
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Show overlay on hover */
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+
+
+
+
+/* 
+  .Projects::after {
+    content: "";
+    width: 350px;
+  } */
+
+
+
+
+
+
+
+
+
+
+
+/*contact*/
+
+
+.contact-left {
+
+
+    flex-basis: 95%;
+
+
+}
+
+
+
+.contact-right {
+
+    flex-basis: 100%;
+    align-items: normal;
+
+
+}
+
+.contact-left p {
+
+    margin-top: 30px;
+
+
+}
+
+
+
+label {
+
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-top: 20px;
+
+}
+
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #0a0a23;
+    color: #ffffff;
+    height: 120px;
+   
+  }
+
+input#Full-name{
+    
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0 0 0;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #0a0a23;
+    color: white;
+
+
+}
+
+input#Email{
+    
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background: #0a0a23;
+    color: white;
+
+}
+
+
+
+
+
+.copyright {
+
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+
+
+
+}
+
+
+
+input[type="submit"] {
+    display: block;
+    width: 20%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    color: white;
+    border-color: white;
+    min-width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+
+
+  .connect {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 72px;
+    font-weight: 200;
+}
+
+.connection{
+    margin-top: auto; /* Push to bottom */
+    padding-bottom: 20px; /* Add some space */
+    text-align: center;
+}
+
+/* Flexbox for centering icons */
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Align vertically */
+    gap: 15px; /* Space between icons */
+    margin-top: 12px;
+}
+
+/* Style icons */
+.social-icons i {
+    font-size: 25px;
+    color: white;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Change color on hover */
+.social-icons i:hover {
+    color: #0077b5; /* LinkedIn blue, you can change */
+    cursor: pointer;
+}
+
+/* css for small screen */
+
+
+
+nav .fa-solid{
+    display: none;
+
+
+
+}
+@media only screen and (max-width: 600px) {
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+
+    .header-text h1{
+        font-size: 30px;
+    }
+
+
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul{
+        background: black;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100px;
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+
+
+}
+
+#message{
+    color: white;
+    margin-top: -40px;
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+
+}
+
+
